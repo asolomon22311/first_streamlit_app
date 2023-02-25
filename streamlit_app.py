@@ -29,9 +29,9 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 #streamlit.text(fruityvice_response.json())
 
-
 # write your own comment -what does the next line do? variable to store the json response
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do? -- json response will be in normalized datafram
 streamlit.dataframe(fruityvice_normalized)
 
+import snowflake-connector
